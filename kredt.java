@@ -74,7 +74,7 @@ public class Kreditai {
         
     
     public class Vartojimo extends Kreditai{
-        void teiktiPaskola()(){
+        void teiktiPaskola(){
             System.out.println("Iveskite vaiku skaiciu nuo 0-10");
             int x = in.nextInt();
             System.out.println("Seimos pajamos nuo 0 iki 10000eur");
@@ -128,7 +128,6 @@ public class Kreditai {
     Scanner keyboard = new Scanner(System.in);
     char move;
     String newLine = System.getProperty("line.separator");
-    Kreditai ch = new Kreditai();
     //int x;
         do{
 
@@ -141,16 +140,15 @@ public class Kreditai {
 
             switch (move){
                 case '1' :    
-                ch.busto();
-                  
+                    Busto paskola = new Busto();
+                    paskola.teiktiPaskola();
                     break;
                 case '2' :
-                ch.vartojimo();
-            
-            
-          
-            
+                    Vartojimo paskola = new Vartojimo();
+                    paskola.teiktiPaskola();
+                    break;
            }
+           
 
 
     }while(move != '3');
