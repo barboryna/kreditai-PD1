@@ -67,6 +67,12 @@ public class Kreditai {
     System.out.println(round(v/12,2));
     System.out.println("                                                              ");
     }
+    public class Busto extends Kreditai{
+        
+    }
+    public class Vartojimo extends Kreditai{
+        
+    }
     
     ////////////////////////////////////////////////////
     //////////////////////////////////////////////
