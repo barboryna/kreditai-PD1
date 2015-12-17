@@ -20,6 +20,21 @@ public class Kreditai {
     float b;
     float t,t1;
     float v;
+    public void spausdintiKreditoSkaiciuoke(){
+        System.out.println("--------------------------------------------------------------");
+        System.out.println("                      Kredito skaiciuokle                     ");
+        System.out.println("--------------------------------------------------------------");
+    }
+    public void spausdintiSutartiesApskaiciavimai(){
+        System.out.println("--------------------------------------------------------------");
+        System.out.println("             Sutarties sudarimo apskaiciavimai                ");
+        System.out.println("--------------------------------------------------------------");
+    }
+    public void spausdintiGrazinimoLaikotarpis(){
+        System.out.println("--------------------------------------------------------------");
+        System.out.println("               Kredito grazinimo laikotarpis                  ");
+        System.out.println("--------------------------------------------------------------"); 
+    }
 }
     
     
@@ -35,18 +50,18 @@ public class Kreditai {
             int c = in.nextInt();
             System.out.println("Laikotarpis 50 metÅ³ - pastato amÅ¾ius, bet ne daugiau 40 metÅ³");
             int l = in.nextInt();
-            System.out.println("--------------------------------------------------------------");
-            System.out.println("                      Kredito skaiciuokle                     ");
-            System.out.println("--------------------------------------------------------------");
+            
+            spausdintiKreditoSkaiciuokle();
+            
             System.out.println("Menesine imoka : ");
             m = c / (l*12);
             System.out.println(m);
             System.out.println("Bendra grazintine suma : ");
             b = (c+(c*13f/100f));
             System.out.println(b);
-            System.out.println("--------------------------------------------------------------");
-            System.out.println("             Sutarties sudarimo apskaiciavimai                ");
-            System.out.println("--------------------------------------------------------------"); 
+            
+            spausdintiSutartiesApskaiciavimai();
+             
             t=(200*x);
             t1=(m+(m*40f/100f));
             //System.out.println("Menesine imoka 40%");
@@ -61,9 +76,9 @@ public class Kreditai {
                     System.out.println("Kreditas suteikiamas"); 
                 }
             }
-            System.out.println("--------------------------------------------------------------");
-            System.out.println("               Kredito grazinimo laikotarpis                  ");
-            System.out.println("--------------------------------------------------------------"); 
+           
+            spausdintiGrazinimoLaikotarpis()
+            
             v=b/m;
             System.out.println("Kredito grazinimas menesiais");
             System.out.println(v); 
@@ -85,18 +100,18 @@ public class Kreditai {
             int c = in.nextInt();
             System.out.println("Laikotarpis iki 5 metu");
             int l = in.nextInt();
-            System.out.println("--------------------------------------------------------------");
-            System.out.println("                      Kredito skaiciuokle                     ");
-            System.out.println("--------------------------------------------------------------");
+            
+            spausdintiKreditoSkaiciukle();
+            
             System.out.println("Menesine imoka : ");
             m = c / (l*12);
             System.out.println(m);
             System.out.println("Bendra grazintine suma : ");
             b = (c+(c*1f/100f));
             System.out.println(b);
-            System.out.println("--------------------------------------------------------------");
-            System.out.println("             Sutarties sudarimo apskaiciavimai                ");
-            System.out.println("--------------------------------------------------------------"); 
+            
+            spausdintiSutartiesApskaiciavimai();
+            
             t=(200*x);
             t1=(m+(m*40f/100f));
             //System.out.println("Menesine imoka 40%");
@@ -111,9 +126,8 @@ public class Kreditai {
                     System.out.println("Kreditas suteikiamas"); 
                 }
             }
-            System.out.println("--------------------------------------------------------------");
-            System.out.println("               Kredito grazinimo laikotarpis                  ");
-            System.out.println("--------------------------------------------------------------"); 
+             spausdintiGrazinimoLaikotarpis();
+             
             v=b/m;
             System.out.println("Kredito grazinimas menesiais");
             System.out.println(v); 
