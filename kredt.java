@@ -24,7 +24,7 @@ public class Kreditai {
     
     
     public class Busto extends Kreditai{
-        void busto(){
+        void teiktiPaskola(){
             System.out.println("Iveskite vaiku skaiciu nuo 0-10");
             int x = in.nextInt();
             System.out.println("Seimos pajamos nuo 0 iki 30000eur");
@@ -74,7 +74,7 @@ public class Kreditai {
         
     
     public class Vartojimo extends Kreditai{
-        void vartojimo(){
+        void teiktiPaskola()(){
             System.out.println("Iveskite vaiku skaiciu nuo 0-10");
             int x = in.nextInt();
             System.out.println("Seimos pajamos nuo 0 iki 10000eur");
